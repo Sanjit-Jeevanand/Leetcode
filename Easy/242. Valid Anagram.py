@@ -8,3 +8,5 @@ class Solution:
             d[s[i]] = d.get(s[i],0) + 1
             d[t[i]] = d.get(t[i],0) - 1
         return all(x == 0 for x in d.values())
+    
+# ord instead of s%97 to get ASCII values

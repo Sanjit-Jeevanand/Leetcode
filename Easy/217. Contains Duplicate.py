@@ -6,4 +6,5 @@ class Solution:
                 return True
             seen.add(num)
         return False
-        
+
+# Entry Exit Optimisation; dont generate the whole set; add check in the loop itself
