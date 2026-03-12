@@ -9,3 +9,5 @@ class Solution:
             else:
                 r = m
         return l
+    
+# Similar to finding the peak element
