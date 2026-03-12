@@ -11,3 +11,6 @@ class Solution:
             else:
                 r -= 1
         return nums[l]
+
+# Normal minimum in rotated sorted array
+# but if neither is the case reduce r by 1
