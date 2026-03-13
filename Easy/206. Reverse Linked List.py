@@ -13,3 +13,5 @@ class Solution:
             prev = curr
             curr = nextn
         return prev
+    
+# prev -> curr -> next
