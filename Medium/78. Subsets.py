@@ -11,3 +11,9 @@ class Solution:
             dfs(i+1, curr)
         dfs(0, [])
         return ans
+    
+# State: I have x and curr; what should I do next?
+# Choices: 
+#   - Include x and recurse
+#   - Exclude x and recurse
+# Base Case: if i == n -> append curr and return
