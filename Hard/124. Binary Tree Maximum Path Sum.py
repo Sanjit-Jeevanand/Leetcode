@@ -11,12 +11,8 @@ class Solution:
             nonlocal ans
             if node is None:
                 return 0
-            left = dfs(node.left)
-            right = dfs(node.right)
-            if left < 0:
-                left = 0
-            if right < 0:
-                right = 0
+            left = max(0,dfs(node.left))
+            right = max(0,dfs(node.right))
             ans = max(ans, node.val + left + right)
             return node.val + max(left, right)
         dfs(root)
