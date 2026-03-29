@@ -12,7 +12,7 @@ class EventManager:
     def pollHighest(self) -> int:
         while self.h:
             p, eid = heapq.heappop(self.h)
-            if eid in self.map and self.map[eid] == -p:
+            if self.map.get(eid) == -p:
                 del self.map[eid]
                 return eid
         return -1
